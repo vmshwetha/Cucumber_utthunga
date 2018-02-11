@@ -1,0 +1,442 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature:"
+      },
+      {
+        "line": 5,
+        "value": "#Scenario:"
+      },
+      {
+        "line": 6,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 7,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 8,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 9,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 10,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 11,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 12,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 13,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 14,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 15,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 16,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 17,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 18,
+        "value": "#\"\""
+      },
+      {
+        "line": 19,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 20,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 22,
+    "elements": [
+      {
+        "line": 28,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "I Am able to access magento webpage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "I am registered the user on magento",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "valid Credentials",
+        "description": "",
+        "id": "login;valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 34,
+            "name": "I update the valid username",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "I am update with password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "I click on Signin button",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "I should get access to the dashboard",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 31,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "I Am able to access magento webpage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "I am registered the user on magento",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "Parameterized valid Credentials",
+        "description": "",
+        "id": "login;parameterized-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "I update the username as \"natarajan.ramanathan93@gmail.com\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 42,
+            "name": "I update the password as \"Welcome123\"",
+            "match": {},
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 43,
+            "name": "I click on the Singin button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "I should get access to the dashboard",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@tag"
+          },
+          {
+            "line": 39,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "I Am able to access magento webpage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "I am registered the user on magento",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "name": "Parameterized valid Credentials",
+        "description": "",
+        "id": "login;parameterized-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "I update the username as \"balajidinakaran1@gmail.com\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 42,
+            "name": "I update the password as \"Welcome@1\"",
+            "match": {},
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 43,
+            "name": "I click on the Singin button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "I should get access to the dashboard",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@tag"
+          },
+          {
+            "line": 39,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "I Am able to access magento webpage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "I am registered the user on magento",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 49,
+        "name": "Parameterized valid Credentials",
+        "description": "",
+        "id": "login;parameterized-valid-credentials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "I update the username as \"balajidinakara123@gmail.com\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 42,
+            "name": "I update the password as \"Weocome@1\"",
+            "match": {},
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 43,
+            "name": "I click on the Singin button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "I should get access to the dashboard",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@tag"
+          },
+          {
+            "line": 39,
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "This feature is going to  test the login functionality\r\nThis feature having following scenarios.\r\nvalid credentials\r\nInvalid credentials",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "resources/Test.feature",
+    "tags": [
+      {
+        "line": 21,
+        "name": "@tag"
+      }
+    ]
+  }
+]
